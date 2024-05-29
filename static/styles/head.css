@@ -1,0 +1,59 @@
+.navigation img {
+    margin-left: 1em;
+    width: 120px;
+}
+
+.navbar {
+    display: flex;
+    justify-content: center;
+    background-color: rgb(222, 220, 220);
+}
+
+.nav-list {
+    display: flex;
+}
+
+.nav-list a {
+display: block;
+padding: 1em;
+text-decoration: none;
+color: rgb(38, 0, 191);
+margin-right: 40px;
+}
+
+.nav-list a:hover {
+    background-color:rgb(118, 118, 118);
+}
+
+.nav-btn {
+    display: none;
+}
+
+@media (max-width: 1000px) {
+    .nav-btn {
+        font-size: 2e;
+        padding-inline: 10px;
+        padding-bottom: 3px;
+    border: none;
+    background-color:blue;
+    color: white;
+    display: block;
+    cursor: pointer;
+    }
+    .nav-list {
+        display: none;
+    }
+    .nav-btn:hover {
+        background-color:rgb(109, 109, 244);
+    }
+
+    .drop:hover .nav-list {
+        display: block;
+        position: absolute;
+        right: 1px;
+        background-color: blue;
+    }
+    .navbar {
+        justify-content: space-between;
+    }
+}
